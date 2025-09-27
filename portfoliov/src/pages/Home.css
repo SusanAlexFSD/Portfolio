@@ -1,0 +1,307 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Orbitron:wght@400;700&display=swap");
+
+.home-page {
+  position: relative;
+  min-height: 100vh;  /* allow content to grow */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #0f172a;
+  color: white;
+  overflow-x: hidden;  /* keep horizontal overflow hidden */
+  overflow-y: auto;    /* allow vertical scroll */
+}
+
+
+.home-center {
+  position: relative;
+  z-index: 2;  /* in front of blobs */
+  text-align: center;
+  width: 100%;
+  margin-top: 12vh;
+  padding-bottom: 5rem; /* space for social links */
+}
+
+.home-content {
+  position: relative;
+  z-index: 2; /* keep above blobs */
+  margin-left: 10%; /* shift content to left side */
+  text-align: left;
+}
+
+.home-title {
+  font-size: 3.5rem;
+  margin-bottom: 3rem;
+  font-weight: bold;
+}
+
+.home-name {
+  position: relative; /* keep in flow above the menu */
+  font-family: "Monoton", cursive;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  z-index: 2;
+  letter-spacing: 2px;
+  margin-bottom: 2rem; /* separates from menu */
+  text-align: left; /* align left */
+  margin-left: 10%; /* push in from the left */
+}
+
+.home-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  text-align: center;
+}
+
+.home-menu li {
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.home-menu li:hover {
+  color: #6a11cb; /* purple accent */
+  transform: translateX(10px); /* slide effect on hover */
+}
+
+
+.menu-item {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2rem; /* desktop size */
+  margin: 20px 0;
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: all 0.3s ease;
+  color: #9e9d9d;
+  letter-spacing: 2px;
+  border: 2px solid transparent;
+}
+
+.menu-item:hover {
+  /* fallback in case JS is off */
+  border: 2px solid #ff65a3;
+}
+
+
+/* Controls in top-right */
+.home-controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 12px;
+}
+
+.icon-btn {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #333;
+  transition: transform 0.2s ease, color 0.3s ease;
+}
+
+.icon-btn:hover {
+  transform: scale(1.2);
+  color: #ff65a3;
+}
+
+/* Dark mode override */
+body.dark-mode {
+  background: #121212;
+  color: #f1f1f1;
+}
+
+
+/* Sidebar overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  z-index: 99;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 100%;
+  background: #222;
+  color: #fff;
+  z-index: 100;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 40px;
+}
+
+.sidebar li {
+  margin: 16px 0;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.sidebar li:hover {
+  color: #ff65a3;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.6rem;
+  color: #fff;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+.close-btn:hover {
+  color: #ff65a3;
+}
+
+
+/* Social links */
+.social-links {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  position: relative; /* so z-index works */
+  z-index: 2;
+}
+
+
+.social-links a {
+  font-size: 2rem;
+  color: #fff;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff65a3;
+  transform: scale(1.2);
+}
+
+
+/* BLOBS BACKGROUND (reused from LandingPage) */
+.blobs {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 50%;
+  opacity: 0.6;
+  filter: blur(100px);
+}
+
+.blob:nth-child(1) {
+  top: 10%;
+  left: -10%;
+  animation: float 8s ease-in-out infinite;
+}
+
+.blob:nth-child(2) {
+  top: 50%;
+  left: 5%;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  animation: float 10s ease-in-out infinite;
+}
+
+.blob:nth-child(3) {
+  bottom: 5%;
+  left: 15%;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  animation: float 12s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(40px, 60px) rotate(30deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+/* MEDIA QUERIES */
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .home-name {
+    font-size: 1.8rem; /* slightly smaller */
+    margin-left: 8%; /* a little closer in */
+    margin-bottom: 1.5rem; /* tighten spacing */
+  }
+  
+
+  .menu-item {
+    font-size: 1.6rem;
+    margin: 15px 0;
+  }
+
+  .social-links a {
+    font-size: 1.2rem; /* keep icons proportionate */
+  }
+
+  .home-center {
+    margin-top: 10vh;
+  }
+}
+
+
+
+/* Mobile screens */
+@media (max-width: 600px) {
+  .home-center {
+    margin-top: 8vh; /* pull everything up */
+  }
+
+  .home-name {
+    font-size: 1.6rem;
+    margin-left: 5%; /* tighter margin on small screens */
+    margin-bottom: 1rem;
+  }
+
+   .menu-item {
+    font-size: 1.5rem;
+    margin: 12px 0;
+  }
+
+  .social-links {
+    margin-top: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .social-links a {
+    font-size: 1rem;
+  }
+}

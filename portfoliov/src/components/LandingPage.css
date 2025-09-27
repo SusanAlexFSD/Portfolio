@@ -1,0 +1,180 @@
+/* example snippet from your landing page */
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: #0f172a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  z-index: 9999;
+}
+
+
+
+.landing-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+
+.icon-btn {
+  background: none;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 50%;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+  transition: background 0.3s ease;
+}
+
+.icon-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode {
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+body.dark-mode .landing {
+  background: #0f172a;
+}
+
+body.dark-mode .blob {
+  filter: blur(50px);
+  opacity: 0.5;
+}
+
+.landing h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.landing .highlight {
+  color: #6a11cb; /* Purple accent */
+}
+
+.landing h2 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #a09f9f;
+}
+
+.highlight {
+  color: #6a11cb;
+}
+
+.enter-btn {
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.enter-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.landing.hide {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease;
+}
+
+
+/* TOP-RIGHT CONTROLS */
+.landing-controls {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 10000;
+ 
+}
+
+.icon-btn i {
+  color: white; /* Good for dark background */
+  font-size: 1.8rem;
+}
+
+
+.icon-btn {
+  background: none;
+  border: none;
+  color: rgb(209, 207, 207);
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+/* BLOBS BACKGROUND */
+.blobs {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.blob {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  border-radius: 50%;
+  opacity: 0.6;
+  filter: blur(100px);
+}
+
+.blob:nth-child(2) {
+  top: 10%;
+  left: 70%;
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  animation-duration: 14s;
+  animation-delay: 2s;
+}
+
+.blob:nth-child(3) {
+  bottom: 5%;
+  left: 20%;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
+  animation-duration: 16s;
+  animation-delay: 4s;
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+  50% {
+    transform: translate(50px, 100px) rotate(45deg);
+  }
+  100% {
+    transform: translate(0, 0) rotate(0deg);
+  }
+}
+
+.blob:nth-child(1) {
+  animation: float 8s ease-in-out infinite;
+}
+
+.blob:nth-child(2) {
+  animation: float 10s ease-in-out infinite;
+}
+
+.blob:nth-child(3) {
+  animation: float 12s ease-in-out infinite;
+}
