@@ -21,14 +21,14 @@ export default function Projects() {
               A simple recipe manager built with React & Vite. Features recipe browsing,
               adding new recipes, and a responsive design.
             </p>
-            <a
-              href="https://recipe-app-susan.netlify.app"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="project-btn"
-            >
-              View Project
-            </a>
+          <a
+            href="/RecipeApp/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="project-btn"
+          >
+            View Project
+          </a>
           </div>
         </div>
 
