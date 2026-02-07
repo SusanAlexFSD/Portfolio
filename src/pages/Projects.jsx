@@ -21,14 +21,14 @@ export default function Projects() {
               A simple recipe manager built with React & Vite. Features recipe browsing,
               adding new recipes, and a responsive design.
             </p>
-          <a
-            href="/RecipeApp/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="project-btn"
-          >
-            View Project
-          </a>
+            <a
+              href="https://www.susanalexanderfsd.co.uk/AppRecipe/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-btn"
+            >
+              View Project
+            </a>
           </div>
         </div>
 
@@ -36,17 +36,15 @@ export default function Projects() {
         <div className="project-card">
           <div className="project-image">
             <img
-              src="https://via.placeholder.com/400x200?text=Portfolio+Website"
-              alt="Portfolio Website Screenshot"
+              src="https://via.placeholder.com/400x200?text=Chess+Game"
+              alt="Chess Game Screenshot"
             />
           </div>
           <div className="project-content">
             <h2>Chess Game</h2>
-            <p>
-              Game of Chess
-            </p>
-             <a
-              href="https://chessgame-susan.netlify.app"
+            <p>Game of Chess</p>
+            <a
+              href="https://www.susanalexanderfsd.co.uk/chess/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-btn"
@@ -60,17 +58,15 @@ export default function Projects() {
         <div className="project-card">
           <div className="project-image">
             <img
-              src="https://via.placeholder.com/400x200?text=Blog+App"
-              alt="Blog App Screenshot"
+              src="https://via.placeholder.com/400x200?text=HunterWellbeing"
+              alt="HunterWellbeing Screenshot"
             />
           </div>
           <div className="project-content">
             <h2>HunterWellbeing</h2>
-            <p>
-              Webpage for a wellbeing company
-            </p>
+            <p>Webpage for a wellbeing company</p>
             <a
-              href="https://hunterwellbeing.netlify.app"
+              href="https://www.susanalexanderfsd.co.uk/HunterWellbeing/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-btn"
@@ -84,17 +80,15 @@ export default function Projects() {
         <div className="project-card">
           <div className="project-image">
             <img
-              src="https://via.placeholder.com/400x200?text=Weather+App"
-              alt="Weather App Screenshot"
+              src="https://via.placeholder.com/400x200?text=Memory+Game"
+              alt="Guess Game Screenshot"
             />
           </div>
           <div className="project-content">
-            <h2>Guess Game</h2>
-            <p>
-              Game of Memory
-            </p>
-             <a
-              href="https://guess-game-susan.netlify.app"
+            <h2>Memory Game</h2>
+            <p>Game of Memory</p>
+            <a
+              href="https://www.susanalexanderfsd.co.uk/MemoryGame/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-btn"
@@ -114,11 +108,9 @@ export default function Projects() {
           </div>
           <div className="project-content">
             <h2>Todo App</h2>
-            <p>
-              To-Do App
-            </p>
-           <a
-              href="https://to-do-list-app-susan.netlify.app"
+            <p>To-Do App</p>
+            <a
+              href="https://www.susanalexanderfsd.co.uk/ToDoListApp/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-btn"
@@ -132,17 +124,15 @@ export default function Projects() {
         <div className="project-card">
           <div className="project-image">
             <img
-              src="https://via.placeholder.com/400x200?text=E-Commerce+Store"
-              alt="E-Commerce Screenshot"
+              src="https://via.placeholder.com/400x200?text=Hangman"
+              alt="Hangman Screenshot"
             />
           </div>
           <div className="project-content">
             <h2>Hangman</h2>
-            <p>
-              Hangman
-            </p>
-             <a
-              href="https://hangman-game-susan.netlify.app"
+            <p>Classic word guessing game</p>
+            <a
+              href="https://www.susanalexanderfsd.co.uk/HangmanReact/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-btn"
@@ -156,17 +146,15 @@ export default function Projects() {
         <div className="project-card">
           <div className="project-image">
             <img
-              src="https://via.placeholder.com/400x200?text=Chat+App"
-              alt="Chat App Screenshot"
+              src="https://via.placeholder.com/400x200?text=Calculator"
+              alt="Calculator Screenshot"
             />
           </div>
           <div className="project-content">
             <h2>Calculator</h2>
-            <p>
-              Calculator in React
-            </p>
+            <p>Calculator in React</p>
             <a
-              href="https://calculator-react-susan.netlify.app"
+              href="https://www.susanalexanderfsd.co.uk/ReactCalc/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-btn"
@@ -180,17 +168,15 @@ export default function Projects() {
         <div className="project-card">
           <div className="project-image">
             <img
-              src="https://via.placeholder.com/400x200?text=Finance+Tracker"
-              alt="Finance Tracker Screenshot"
+              src="https://via.placeholder.com/400x200?text=Rock+Paper+Scissors"
+              alt="Rock Paper Scissors Screenshot"
             />
           </div>
           <div className="project-content">
-            <h2>Rock Paper Scissors Game</h2>
-            <p>
-              Rock Paper Scissors
-            </p>
+            <h2>Rock Paper Scissors</h2>
+            <p>Fun hand game against the computer</p>
             <a
-              href="https://rock-papper-scissors-susan.netlify.app"
+              href="https://www.susanalexanderfsd.co.uk/RockPaperScissors/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-btn"
@@ -204,17 +190,15 @@ export default function Projects() {
         <div className="project-card">
           <div className="project-image">
             <img
-              src="https://via.placeholder.com/400x200?text=Quiz+App"
-              alt="Quiz App Screenshot"
+              src="https://via.placeholder.com/400x200?text=Word+Counter"
+              alt="Word Counter Screenshot"
             />
           </div>
           <div className="project-content">
             <h2>Word Counter</h2>
-            <p>
-              Word Counter
-            </p>
+            <p>Counts words and characters in text</p>
             <a
-              href="https://word-counter-app-susan.netlify.app"
+              href="https://www.susanalexanderfsd.co.uk/WordCounter/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-btn"
@@ -228,17 +212,15 @@ export default function Projects() {
         <div className="project-card">
           <div className="project-image">
             <img
-              src="https://via.placeholder.com/400x200?text=Music+Player"
-              alt="Music Player Screenshot"
+              src="https://via.placeholder.com/400x200?text=Speed+Test"
+              alt="Speed Test Screenshot"
             />
           </div>
           <div className="project-content">
             <h2>Speed Test</h2>
-            <p>
-              Speed Test
-            </p>
+            <p>Typing speed test app</p>
             <a
-              href="https://speedtest-typing.netlify.app"
+              href="https://www.susanalexanderfsd.co.uk/SpeedTest/"
               target="_blank"
               rel="noopener noreferrer"
               className="project-btn"
@@ -252,19 +234,18 @@ export default function Projects() {
         <div className="project-card">
           <div className="project-image">
             <img
-              src="https://via.placeholder.com/400x200?text=Photo+Gallery"
-              alt="Photo Gallery Screenshot"
+              src="https://via.placeholder.com/400x200?text=company+directory"
+              alt="Company Directory Screenshot"
             />
           </div>
           <div className="project-content">
             <h2>Company Directory</h2>
-            <p>
-              Company Directory
-            </p>
+            <p>Browse and manage company contacts</p>
             <a
-              href="http://susanportfolio.infinityfree.me/companyDirectory/" className="project-btn"
+              href="https://www.susanalexanderfsd.co.uk/companydirectory/"
               target="_blank"
-               rel="noopener noreferrer external"
+              rel="noopener noreferrer"
+              className="project-btn"
             >
               View Project
             </a>
@@ -275,42 +256,40 @@ export default function Projects() {
         <div className="project-card">
           <div className="project-image">
             <img
-              src="https://via.placeholder.com/400x200?text=Game+App"
-              alt="Game App Screenshot"
+              src="https://via.placeholder.com/400x200?text=Gazeteer"
+              alt="Gazeteer Screenshot"
             />
           </div>
           <div className="project-content">
             <h2>Gazeteer</h2>
-            <p>
-              Gazeteer
-            </p>
+            <p>Interactive map and location app</p>
             <a
-              href="http://susanportfolio.infinityfree.me/Gazeteer/" className="project-btn"
+              href="https://www.susanalexanderfsd.co.uk/Gazeteer/"
               target="_blank"
-               rel="noopener noreferrer external"
+              rel="noopener noreferrer"
+              className="project-btn"
             >
               View Project
             </a>
           </div>
         </div>
 
-           {/* Project 13 */}
+        {/* Project 13 */}
         <div className="project-card">
           <div className="project-image">
             <img
-              src="https://via.placeholder.com/400x200?text=Game+App"
-              alt="Game App Screenshot"
+              src="https://via.placeholder.com/400x200?text=weather+App"
+              alt="Weather App Screenshot"
             />
           </div>
           <div className="project-content">
             <h2>Weather App</h2>
-            <p>
-              Weather App
-            </p>
+            <p>Displays current weather by location</p>
             <a
-              href="http://susanportfolio.infinityfree.me/weatherApp/" className="project-btn"
+              href="https://www.susanalexanderfsd.co.uk/weatherApp/"
               target="_blank"
-               rel="noopener noreferrer external"
+              rel="noopener noreferrer"
+              className="project-btn"
             >
               View Project
             </a>
